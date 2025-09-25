@@ -1,0 +1,114 @@
+<table>
+    <thead>
+        <tr>
+            <th>Field name</th>
+            <th>Required</th>
+            <th>Field meaning</th>
+        <tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>##Digital-input</td>
+            <td>Yes</td>
+            <td>Path to a file that will be displayed in a digital version of a book. Path should point to
+                a location where the file is saved in the "assets" folder. Be careful to write a correct relative path
+                to
+                the file, e.g. <code class="docutils literal notranslate">
+                    <span class="pre">./assets/path/to/file.png</span></code> is
+                valid while
+                <code class="docutils literal notranslate">
+                    <span class="pre">C:\User\Documents\my-book\assets\path\to\file.png</span></code>
+                is invalid.
+            </td>
+        <tr>
+        <tr>
+            <td>##Paper-input</td>
+            <td>No</td>
+            <td>Path to a file that will be displayed in a paper version of a book. Path should point to a
+                location where the file is saved in the "assets" folder. Be careful to write a correct relative path to
+                the file, e.g. <code class="docutils literal notranslate">
+                    <span class="pre">./assets/path/to/file.png</span></code> is
+                valid while
+                <code class="docutils literal notranslate">
+                    <span class="pre">C:\User\Documents\my-book\assets\path\to\file.png</span></code>
+                is invalid. If left empty, no object will not be included in the duplicate.
+            </td>
+        <tr>
+        <tr>
+            <td>##Source</td>
+            <td>Yes</td>
+            <td>All relevant source and copyright information.</td>
+        <tr>
+        <tr>
+            <td>##Is-color</td>
+            <td>No</td>
+            <td>Indicate whether an asset is meant to be printed in color. If a figure should be printed in
+                black-and-white, leave it empty or write “no”.</td>
+        <tr>
+        <tr>
+            <td>##License</td>
+            <td>No</td>
+            <td>Name of a license under which an object was published. Preferably [SPDX
+                ID](https://spdx.org/licenses/) like “BSD-4-Clause”. A full name, e.g. “Creative Commons Attribution 4.0
+                International”, is also acceptable, although not recommended.</td>
+        <tr>
+        <tr>
+            <td>##Author</td>
+            <td>No</td>
+            <td>Attribute an author of an object. Institution could also be attributed.</td>
+        <tr>
+        <tr>
+            <td>##Alt-text</td>
+            <td>Yes*</td>
+            <td>Alt text to describe appearance or function of a multimedia object. This field is required
+                if no alt text was provided in the “View Alt Text…” option. Read more about alt texts in the appropriate
+                section.</td>
+        <tr>
+        <tr>
+            <td>##Height</td>
+            <td>No</td>
+            <td>Set object’s desired height. Note that this is only an unbinding indication to the platform,
+                relevant to some objects like embedded interactive maps. In most cases it will be ignored.</td>
+        <tr>
+        <tr>
+            <td>##Delete-previous</td>
+            <td>No</td>
+            <td>Use this field if you want to remove previous object, like image, video, etc. Useful when
+                you want to have an image directly in your MS Word file and replace it with an image indicated with
+                “##Digital-source” or “##Paper-source”.</td>
+        <tr>
+        <tr>
+            <td>##Comment</td>
+            <td>No</td>
+            <td>In case MS Word comments are not enough, you can comment an asset using this field so that
+                this comment is visible in editor’s internal tools.</td>
+        <tr>
+        <tr>
+            <td>##Is-ready</td>
+            <td>No</td>
+            <td>Mark this asset as viewed in editor’s internal tools. This field is reserved for editors.</td>
+        <tr>
+    </tbody>
+</table>
+<style>
+    table {
+        border-collapse: collapse;
+        border: 2px solid rgb(140 140 140);
+        font-family: "Gill Sans", sans-serif;
+    }
+
+    thead,
+    tfoot {
+        background-color: rgb(228 240 245);
+    }
+
+    th,
+    td {
+        border: 1px solid rgb(160 160 160);
+        padding: 8px 10px;
+    }
+
+    tbody>tr:nth-of-type(even) {
+        background-color: rgb(237 238 242);
+    }
+</style>

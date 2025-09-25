@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <style>
+        img.huechange {
+            filter: hue-rotate(120deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map" style="height: 300px; width: 90%">
+        <script>
+            var map = L.map('map').setView([49.5036259, 5.948715453669688], 12);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            const uni_places = [
+                ["University of Luxembourg, Belval Campus", 49.5036259, 5.948715453669688],
+                ["University of Luxembourg, Limpertsberg Campus", 49.6237678, 6.1064803],
+                ["University of Luxembourg, Weicker Building", 49.63242755, 6.168490267777312],
+                ["University of Luxembourg, Kirchberg Campus", 49.6285026, 6.158712],
+            ];
+            const dgt_places = [
+                ["Walter de Gruyter GmbH", 52.504518, 13.3602093],
+                ["Walter de Gruyter, Inc.", 42.354994649999995, -71.054079165741],
+                ["Birkhäuser Verlag GmbH", 47.5643399, 7.5656294],
+                ["De Gruyter Open Ltd.", 52.283873400000004, 20.95094188222607],
+            ];
+            const dgtIcon = new L.Icon({
+                iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Verlag_Walter_de_Gruyter_Logo_ohne_Text.svg',
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                iconSize: [25, 50],
+                iconAnchor: [12, 50],
+                popupAnchor: [1, -34],
+                shadowSize: [50, 50]
+            })
+            for (var i = 0; i < uni_places.length; i++) {
+                new L.marker([uni_places[i][1], uni_places[i][2]])
+                    .bindPopup(uni_places[i][0])
+                    .addTo(map);
+            }
+            for (var i = 0; i < dgt_places.length; i++) {
+                new L.marker([dgt_places[i][1], dgt_places[i][2]], { icon: dgtIcon })
+                    .bindPopup(dgt_places[i][0])
+                    .addTo(map);
+            }
+        </script>
+    </div>
+</body>
+
+</html>
