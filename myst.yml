@@ -17,5 +17,8 @@ project:
     - file: 05_ipynb_guidelines.ipynb
     - file: 06_help.md
     - file: 07_appendix_manuscript_template.md
+  downloads:
+    - file: ./public/test.json
+      title: Test JSON File
 site:
   template: book-theme
