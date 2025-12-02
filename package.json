@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "myst start",
-    "build": "myst build --html && cp -r ./assets _build/html/assets",
+    "build": "BASE_URL=/monograph-blueprint myst build --html && cp -r ./assets _build/html/assets",
     "init-gh-pages": "myst init --gh-pages"
   },
   "author": "",
