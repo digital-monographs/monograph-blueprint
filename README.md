@@ -20,3 +20,8 @@ To build a book out of the blueprint, follow the [mystmd documentation](https://
 
 The blueprint was tested with node.js v20.15.0.
 
+## Misc
+
+sed command in the package.json seems not to work properly. You can apply it locally:
+`ed -i -e 's|src="assets|src="../assets|g' 04_interactivity_in_docx.md`
+
