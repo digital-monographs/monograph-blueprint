@@ -8,7 +8,7 @@ keywords:
 - digital humanities
 open_access: 'True'
 license: CC-BY-NC-ND-4.0
-github: https://github.com/monograph-prototypes/guidelines-for-drafting-manuscript
+github: https://github.com/digital-monographs/monograph-blueprint
 ---
 
 
