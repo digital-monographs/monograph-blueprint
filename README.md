@@ -14,7 +14,7 @@ You can see the book [here](https://digital-monographs.github.io/monograph-bluep
 
 To build a book out of the blueprint, follow the [mystmd documentation](https://mystmd.org/guide/deployment#creating-static-html).
 
-1. Install `mystmd@v1.6.1`. 
+1. Install `mystmd@v1.6.7`. 
 1. Build the static book with `myst build --html && cp -r ./assets _build/html/assets`
 1. Serve the book with `npx serve _build/html`
 
