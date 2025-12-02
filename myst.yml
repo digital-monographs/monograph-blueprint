@@ -4,7 +4,7 @@ project:
   banner: ./assets/00_index/banner.jpeg
   copyright: '2026'
   date: '2025-12-01'
-  github: monograph-prototypes/guidelines-for-drafting-manuscripts-v2
+  github: digital-monographs/monograph-blueprint 
   open_access: true
   thumbnail: ./assets/00_index/thumbnail.svg
   title: Guidelines For Drafting Manuscripts
