@@ -11,6 +11,8 @@ license: CC-BY-NC-ND-4.0
 github: https://github.com/monograph-prototypes/guidelines-for-drafting-manuscript
 ---
 
+
+
 # Guidelines For Drafting Manuscripts
 
 :::{margin}  
@@ -18,7 +20,7 @@ github: https://github.com/monograph-prototypes/guidelines-for-drafting-manuscri
 :::
 
 
-% :::{dgt-mon-asset} 6951bea6-7d75-4454-9190-7238aa425cc1 :::
+% :::{dgt-mon-asset} a4de9d04-504d-448e-ac28-ad691f68c3a3 :::
 
 ## Introduction
 
@@ -34,6 +36,7 @@ To help you with compilation of your manuscript, we offer the manuscript templat
 
 :::{tableofcontents}  
 :::
+
 
 
 

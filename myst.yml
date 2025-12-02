@@ -1,24 +1,24 @@
-version: 1
 project:
-  title: Guidelines For Drafting Manuscripts
   authors:
-    - name: Pawel Kaminski
+  - name: Pawel Kaminski
+  banner: ./assets/00_index/banner.jpeg
   copyright: '2026'
+  date: '2025-12-01'
   github: monograph-prototypes/guidelines-for-drafting-manuscripts-v2
-  banner: assets/00_index/banner.jpeg
-  thumbnail: assets/00_index/thumbnail.svg
+  open_access: true
+  thumbnail: ./assets/00_index/thumbnail.svg
+  title: Guidelines For Drafting Manuscripts
   toc:
-    - file: 00_landing_page.md
-    - file: 00_index.md
-    - file: 01_general.md
-    - file: 02_introduction_to_docx.md
-    - file: 03_docx_advanced_elements.md
-    - file: 04_interactivity_in_docx.md
-    - file: 05_ipynb_guidelines.ipynb
-    - file: 06_help.md
-    - file: 07_appendix_manuscript_template.md
-  downloads:
-    - file: ./public/test.json
-      title: Test JSON File
+  - file: 00_index
+  - file: 01_general
+  - file: 02_introduction_to_docx
+  - file: 03_docx_advanced_elements
+  - file: 04_interactivity_in_docx
+  - file: 05_ipynb_guidelines
+  - file: 06_help
+  - file: 07_appendix_manuscript_template
 site:
+  options:
+    folders: true
   template: book-theme
+version: 1
